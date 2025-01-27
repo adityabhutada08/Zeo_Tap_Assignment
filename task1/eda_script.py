@@ -4,9 +4,9 @@ import seaborn as sns
 from fpdf import FPDF
 
 # Load the datasets
-customers_df = pd.read_csv('Customers.csv')
-products_df = pd.read_csv('Products.csv')
-transactions_df = pd.read_csv('Transactions.csv')
+customers_df = pd.read_csv('../Customers.csv')
+products_df = pd.read_csv('../Products.csv')
+transactions_df = pd.read_csv('../Transactions.csv')
 
 # Convert date columns to datetime format for proper analysis
 customers_df['SignupDate'] = pd.to_datetime(customers_df['SignupDate'])
